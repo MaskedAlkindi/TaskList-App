@@ -59,6 +59,11 @@ function TaskPage({ route, navigation }) {
               updatedTasks[index].status = updatedTasks[index].status === 'complete' ? 'not complete' : 'complete';
               setTasks(updatedTasks);
             }}
+            onRemove={() => {
+              let updatedTasks = [...tasks];
+              updatedTasks.splice(index, 1);
+              setTasks(updatedTasks);
+            }}
           />
         }
       />

@@ -1,7 +1,7 @@
 import React from 'react';
-import { Text, TouchableOpacity, View, StyleSheet, CheckBox } from 'react-native';
+import { Text, TouchableOpacity, View, StyleSheet, CheckBox, Button } from 'react-native';
 
-function TaskItem({ task, onToggle }) {
+function TaskItem({ task, onToggle, onRemove }) {
   return (
     <View style={styles.container}>
       <CheckBox value={task.status === 'complete'} onValueChange={onToggle} />
@@ -9,6 +9,7 @@ function TaskItem({ task, onToggle }) {
         <Text style={styles.text}>{task.name}</Text>
         <Text style={styles.text}>{task.date}</Text>
       </View>
+      <Button title="X" onPress={onRemove} />
     </View>
   );
 }
