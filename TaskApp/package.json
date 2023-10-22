@@ -20,7 +20,8 @@
     "react-dom": "18.2.0",
     "react-native": "^0.71.8",
     "react-native-elements": "^3.4.3",
-    "react-native-web": "^0.18.12"
+    "react-native-web": "^0.18.12",
+    "expo-dev-client": "~2.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
